@@ -18,6 +18,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\HappyCode.NetCoreBoilerplate.Core\Quixa.Core.csproj" />
+    <ProjectReference Include="..\..\src\Quixa.Core\Quixa.Core.csproj" />
   </ItemGroup>
 </Project>
