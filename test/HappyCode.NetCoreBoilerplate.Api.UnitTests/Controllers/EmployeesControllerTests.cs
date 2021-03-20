@@ -3,17 +3,17 @@ using System.Threading;
 using System.Threading.Tasks;
 using AutoFixture.Xunit2;
 using FluentAssertions;
-using HappyCode.NetCoreBoilerplate.Api.Controllers;
-using HappyCode.NetCoreBoilerplate.Core;
-using HappyCode.NetCoreBoilerplate.Core.Dtos;
-using HappyCode.NetCoreBoilerplate.Core.Repositories;
+using Quixa.Api.Controllers;
+using Quixa.Core;
+using Quixa.Core.Dtos;
+using Quixa.Core.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.FeatureManagement;
 using Moq;
 using Xunit;
 
-namespace HappyCode.NetCoreBoilerplate.Api.UnitTests.Controllers
+namespace Quixa.Api.UnitTests.Controllers
 {
     public class EmployeesControllerTests : ControllerTestsBase<EmployeesController>
     {

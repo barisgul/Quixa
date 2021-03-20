@@ -1,14 +1,14 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using HappyCode.NetCoreBoilerplate.Core;
-using HappyCode.NetCoreBoilerplate.Core.Dtos;
-using HappyCode.NetCoreBoilerplate.Core.Services;
+using Quixa.Core;
+using Quixa.Core.Dtos;
+using Quixa.Core.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.FeatureManagement.Mvc;
 
-namespace HappyCode.NetCoreBoilerplate.Api.Controllers
+namespace Quixa.Api.Controllers
 {
     [Route("api/cars")]
     public class CarsController : ApiControllerBase

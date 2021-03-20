@@ -1,8 +1,8 @@
-using HappyCode.NetCoreBoilerplate.Api.Controllers;
+using Quixa.Api.Controllers;
 using Microsoft.AspNetCore.Http;
 using Moq.AutoMock;
 
-namespace HappyCode.NetCoreBoilerplate.Api.UnitTests.Controllers
+namespace Quixa.Api.UnitTests.Controllers
 {
     public abstract class ControllerTestsBase<T>
         where T : ApiControllerBase

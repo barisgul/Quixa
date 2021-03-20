@@ -2,12 +2,12 @@ using System;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using HappyCode.NetCoreBoilerplate.Core.Settings;
+using Quixa.Core.Settings;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace HappyCode.NetCoreBoilerplate.Api.BackgroundServices
+namespace Quixa.Api.BackgroundServices
 {
     public class PingWebsiteBackgroundService : BackgroundService
     {

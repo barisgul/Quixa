@@ -4,15 +4,15 @@ using System.Threading;
 using System.Threading.Tasks;
 using AutoFixture.Xunit2;
 using FluentAssertions;
-using HappyCode.NetCoreBoilerplate.Api.Controllers;
-using HappyCode.NetCoreBoilerplate.Core.Dtos;
-using HappyCode.NetCoreBoilerplate.Core.Services;
+using Quixa.Api.Controllers;
+using Quixa.Core.Dtos;
+using Quixa.Core.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Xunit;
 
-namespace HappyCode.NetCoreBoilerplate.Api.UnitTests.Controllers
+namespace Quixa.Api.UnitTests.Controllers
 {
     public class CarsControllerTests : ControllerTestsBase<CarsController>
     {

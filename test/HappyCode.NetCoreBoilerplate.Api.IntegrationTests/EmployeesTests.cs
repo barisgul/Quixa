@@ -3,12 +3,12 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using FluentAssertions;
-using HappyCode.NetCoreBoilerplate.Api.IntegrationTests.Extensions;
-using HappyCode.NetCoreBoilerplate.Api.IntegrationTests.Infrastructure;
-using HappyCode.NetCoreBoilerplate.Core.Dtos;
+using Quixa.Api.IntegrationTests.Extensions;
+using Quixa.Api.IntegrationTests.Infrastructure;
+using Quixa.Core.Dtos;
 using Xunit;
 
-namespace HappyCode.NetCoreBoilerplate.Api.IntegrationTests
+namespace Quixa.Api.IntegrationTests
 {
     [Collection(nameof(TestServerClientCollection))]
     public class EmployeesTests

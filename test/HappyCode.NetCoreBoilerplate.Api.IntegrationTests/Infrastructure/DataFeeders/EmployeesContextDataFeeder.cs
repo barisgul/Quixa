@@ -1,8 +1,8 @@
 using System;
-using HappyCode.NetCoreBoilerplate.Core;
-using HappyCode.NetCoreBoilerplate.Core.Models;
+using Quixa.Core;
+using Quixa.Core.Models;
 
-namespace HappyCode.NetCoreBoilerplate.Api.IntegrationTests.Infrastructure.DataFeeders
+namespace Quixa.Api.IntegrationTests.Infrastructure.DataFeeders
 {
     public class EmployeesContextDataFeeder
     {

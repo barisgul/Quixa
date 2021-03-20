@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\HappyCode.NetCoreBoilerplate.Api\HappyCode.NetCoreBoilerplate.Api.csproj" />
+    <ProjectReference Include="..\..\src\Quixa.Api\Quixa.Api.csproj" />
+    <ProjectReference Include="..\..\src\Quixa.Core\Quixa.Core.csproj" /> 
   </ItemGroup>
 </Project>

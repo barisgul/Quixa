@@ -2,23 +2,23 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using HappyCode.NetCoreBoilerplate.Api.Infrastructure.Configurations;
 using Swashbuckle.AspNetCore.SwaggerUI;
-using HappyCode.NetCoreBoilerplate.Core;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using HappyCode.NetCoreBoilerplate.Api.BackgroundServices;
-using HappyCode.NetCoreBoilerplate.Api.Infrastructure.Filters;
+using Quixa.Api.BackgroundServices;
+using Quixa.Api.Infrastructure.Filters;
 using Microsoft.Extensions.Hosting;
-using HappyCode.NetCoreBoilerplate.Api.Infrastructure.Registrations;
-using HappyCode.NetCoreBoilerplate.Core.Settings;
-using HappyCode.NetCoreBoilerplate.Core.Extensions;
+using Quixa.Api.Infrastructure.Registrations;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using HealthChecks.UI.Client;
 using Microsoft.FeatureManagement;
 using Microsoft.FeatureManagement.FeatureFilters;
+using Quixa.Core;
+using Microsoft.EntityFrameworkCore;
+using Quixa.Api.Infrastructure.Configurations;
+using Quixa.Core.Settings;
+using Quixa.Core.Extensions;
 
-namespace HappyCode.NetCoreBoilerplate.Api
+namespace Quixa.Api
 {
     public class Startup
     {

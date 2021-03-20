@@ -4,15 +4,15 @@ using System.Threading.Tasks;
 using AutoFixture;
 using AutoFixture.Xunit2;
 using FluentAssertions;
-using HappyCode.NetCoreBoilerplate.Core.Dtos;
-using HappyCode.NetCoreBoilerplate.Core.Models;
-using HappyCode.NetCoreBoilerplate.Core.Repositories;
-using HappyCode.NetCoreBoilerplate.Core.UnitTests.Extensions;
+using Quixa.Core.Dtos;
+using Quixa.Core.Models;
+using Quixa.Core.Repositories;
+using Quixa.Core.UnitTests.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Moq;
 using Xunit;
 
-namespace HappyCode.NetCoreBoilerplate.Core.UnitTests.Repositories
+namespace Quixa.Core.UnitTests.Repositories
 {
     public class EmployeeRepositoryTests
     {

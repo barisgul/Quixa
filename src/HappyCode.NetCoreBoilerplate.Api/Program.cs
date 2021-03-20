@@ -1,11 +1,11 @@
 using System;
 using System.Threading.Tasks;
-using HappyCode.NetCoreBoilerplate.Api.Infrastructure.Configurations;
+using Quixa.Api.Infrastructure.Configurations;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 
-namespace HappyCode.NetCoreBoilerplate.Api
+namespace Quixa.Api
 {
     public static class Program
     {

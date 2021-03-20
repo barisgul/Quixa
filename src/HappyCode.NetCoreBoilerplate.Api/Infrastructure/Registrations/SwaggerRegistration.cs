@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
-namespace HappyCode.NetCoreBoilerplate.Api.Infrastructure.Registrations
+namespace Quixa.Api.Infrastructure.Registrations
 {
     public static class SwaggerRegistration
     {
@@ -27,7 +27,7 @@ namespace HappyCode.NetCoreBoilerplate.Api.Infrastructure.Registrations
                 });
 
                 swaggerOptions.OrderActionsBy(x => x.RelativePath);
-                swaggerOptions.IncludeXmlComments(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "HappyCode.NetCoreBoilerplate.Api.xml"));
+                swaggerOptions.IncludeXmlComments(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Quixa.Api.xml"));
 
                 swaggerOptions.AddSecurityDefinition("ApiKey", new OpenApiSecurityScheme
                 {

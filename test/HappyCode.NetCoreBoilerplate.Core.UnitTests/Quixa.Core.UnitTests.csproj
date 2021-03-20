@@ -17,8 +17,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\..\src\HappyCode.NetCoreBoilerplate.Core\HappyCode.NetCoreBoilerplate.Core.csproj" />
+    <ProjectReference Include="..\..\src\HappyCode.NetCoreBoilerplate.Core\Quixa.Core.csproj" />
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace HappyCode.NetCoreBoilerplate.Api
+namespace Quixa.Api
 {
     public class ErrorResponse
     {

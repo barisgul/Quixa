@@ -7,12 +7,12 @@ do \
   mkdir -p ${projectFile%.*}/ && mv $projectFile ${projectFile%.*}/; \
 done
 
-RUN dotnet restore /work/HappyCode.NetCoreBoilerplate.Api/HappyCode.NetCoreBoilerplate.Api.csproj
+RUN dotnet restore /work/Quixa.Api/Quixa.Api.csproj
 
 COPY src .
 
 FROM build AS publish
-WORKDIR /work/HappyCode.NetCoreBoilerplate.Api
+WORKDIR /work/Quixa.Api
 RUN dotnet publish -c Release -o /app --no-restore
 
 LABEL maintainer="Lukasz Kurzyniec (lkurzyniec@gmail.com)"
@@ -24,4 +24,4 @@ COPY --from=publish /app .
 HEALTHCHECK --interval=5m --timeout=3s --start-period=10s --retries=1 \
   CMD curl --fail http://localhost:80/health || exit 1
 
-ENTRYPOINT ["dotnet", "HappyCode.NetCoreBoilerplate.Api.dll"]
+ENTRYPOINT ["dotnet", "Quixa.Api.dll"]

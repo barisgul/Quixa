@@ -10,6 +10,6 @@
   <PropertyGroup>
     <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
     <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
-    <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)HappyCode.NetCoreBoilerplate.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)Quixa.ruleset</CodeAnalysisRuleSet>
  </PropertyGroup>
 </Project>

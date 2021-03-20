@@ -1,4 +1,4 @@
-namespace HappyCode.NetCoreBoilerplate.Db.Options
+namespace Quixa.Db.Options
 {
     public class UpgradeOptions
     {

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace HappyCode.NetCoreBoilerplate.Api.Controllers
+namespace Quixa.Api.Controllers
 {
     [Produces("application/json")]
     [ApiController]

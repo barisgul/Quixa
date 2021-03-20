@@ -2,7 +2,7 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace HappyCode.NetCoreBoilerplate.Api.Infrastructure.Filters
+namespace Quixa.Api.Infrastructure.Filters
 {
     public class ValidateModelStateFilter : ActionFilterAttribute
     {

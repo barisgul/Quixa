@@ -2,14 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using HappyCode.NetCoreBoilerplate.Core;
-using HappyCode.NetCoreBoilerplate.Core.Dtos;
-using HappyCode.NetCoreBoilerplate.Core.Repositories;
+using Quixa.Core;
+using Quixa.Core.Dtos;
+using Quixa.Core.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.FeatureManagement;
 
-namespace HappyCode.NetCoreBoilerplate.Api.Controllers
+namespace Quixa.Api.Controllers
 {
     [Route("api/employees")]
     public class EmployeesController : ApiControllerBase

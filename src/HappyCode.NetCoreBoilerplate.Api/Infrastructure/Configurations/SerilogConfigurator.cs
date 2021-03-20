@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Serilog;
 using Serilog.Core;
 
-namespace HappyCode.NetCoreBoilerplate.Api.Infrastructure.Configurations
+namespace Quixa.Api.Infrastructure.Configurations
 {
     public static class SerilogConfigurator
     {

@@ -4,14 +4,14 @@ using System.Threading.Tasks;
 using AutoFixture;
 using AutoFixture.Xunit2;
 using FluentAssertions;
-using HappyCode.NetCoreBoilerplate.Core.Models;
-using HappyCode.NetCoreBoilerplate.Core.Services;
-using HappyCode.NetCoreBoilerplate.Core.UnitTests.Extensions;
+using Quixa.Core.Models;
+using Quixa.Core.Services;
+using Quixa.Core.UnitTests.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Moq;
 using Xunit;
 
-namespace HappyCode.NetCoreBoilerplate.Core.UnitTests.Services
+namespace Quixa.Core.UnitTests.Services
 {
     public class CarServiceTests
     {
