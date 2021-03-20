@@ -3,7 +3,7 @@
     <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <Authors>Łukasz Kurzyniec</Authors>
+    <Authors>Barış Gül</Authors>
     <Copyright>Copyright © happy+code 2020</Copyright>
     <Version>0.1.0</Version>
   </PropertyGroup>

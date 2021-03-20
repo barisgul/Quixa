@@ -15,7 +15,7 @@ FROM build AS publish
 WORKDIR /work/Quixa.Api
 RUN dotnet publish -c Release -o /app --no-restore
 
-LABEL maintainer="Lukasz Kurzyniec (lkurzyniec@gmail.com)"
+LABEL maintainer="Barış Gül (bariss.gull@gmail.com)"
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS final
 WORKDIR /app
