@@ -1,6 +1,8 @@
 using Quixa.Core.Repositories;
 using Quixa.Core.Services;
 using Microsoft.Extensions.DependencyInjection;
+using Quixa.Core.Interfaces;
+using Quixa.Core.RestApiHandler;
 
 namespace Quixa.Core.Extensions
 {
@@ -10,6 +12,8 @@ namespace Quixa.Core.Extensions
         {
             services.AddTransient<IEmployeeRepository, EmployeeRepository>();
             services.AddScoped<ICarService, CarService>();
+            services.AddScoped<IRestClientHandler, RestClientHandler>();
+            services.AddScoped<IApiService, RegisteredApiService>();
 
             return services;
         }

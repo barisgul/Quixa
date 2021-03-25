@@ -19,7 +19,7 @@ namespace Quixa.Core.Services
                 Address = Address
             };
 
-            throw new System.NotImplementedException();
+            return swaggerApi;
         }
 
         private void ParseJobject(JObject jObject)

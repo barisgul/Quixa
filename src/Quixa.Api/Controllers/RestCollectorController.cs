@@ -1,8 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Quixa.Core.Dtos;
@@ -21,11 +17,11 @@ namespace Quixa.Api.Controllers
         IConfiguration configuration;
         IRestClientHandler restClientHandler;
         IApiService apiService;
-        public RestCollectorController(IConfiguration configuration)
+        public RestCollectorController(IConfiguration configuration, IRestClientHandler restClientHandler, IApiService apiService)
         {
             this.configuration = configuration;
-            this.restClientHandler = new RestClientHandler();
-            this.apiService = new RegisteredApiService();
+            this.restClientHandler = restClientHandler;
+            this.apiService = apiService;
         }
         // GET: api/<RestCollectorController>
         [HttpGet]
