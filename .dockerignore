@@ -1,6 +1,0 @@
-**/bin/
-**/obj/
-**/*.user
-src/Quixa.Db
-.vs
-.git
