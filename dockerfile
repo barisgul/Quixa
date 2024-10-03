@@ -1,27 +1,57 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+USER $APP_UID
+WORKDIR /app
+EXPOSE 8080
+
+LABEL org.opencontainers.image.authors="Łukasz Kurzyniec" \
+      org.opencontainers.image.title="Quixa" \
+      org.opencontainers.image.description="Simple API written in .NET 8."
+
+# --------------
+
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /work
 
+ENV DOTNET_NOLOGO=true
+ENV DOTNET_CLI_TELEMETRY_OPTOUT=true
+
+COPY ./Directory.Build.props ./
+COPY ./Directory.Packages.props ./
 COPY src/*/*.csproj ./
 RUN for projectFile in $(ls *.csproj); \
-do \
+  do \
   mkdir -p ${projectFile%.*}/ && mv $projectFile ${projectFile%.*}/; \
-done
+  done
 
 RUN dotnet restore /work/Quixa.Api/Quixa.Api.csproj
 
 COPY src .
 
+# --------------
+
 FROM build AS publish
 WORKDIR /work/Quixa.Api
+
+ENV DOTNET_NOLOGO=true
+ENV DOTNET_CLI_TELEMETRY_OPTOUT=true
+
 RUN dotnet publish -c Release -o /app --no-restore
 
-LABEL maintainer="Barış Gül (bariss.gull@gmail.com)"
+# --------------
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS final
-WORKDIR /app
+FROM base AS final
 COPY --from=publish /app .
 
+ENV DOTNET_NOLOGO=true
+ENV DOTNET_CLI_TELEMETRY_OPTOUT=true
+
+ARG VERSION=2.0.0
+ARG SHA=none
+
+ENV HC_SHA=${SHA}
+ENV HC_VERSION=${VERSION}
+
 HEALTHCHECK --interval=5m --timeout=3s --start-period=10s --retries=1 \
-  CMD curl --fail http://localhost:80/health || exit 1
+  CMD curl --fail http://localhost:8080/healthz/live || exit 1
 
 ENTRYPOINT ["dotnet", "Quixa.Api.dll"]
