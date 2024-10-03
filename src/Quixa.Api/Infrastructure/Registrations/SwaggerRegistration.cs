@@ -14,6 +14,7 @@ namespace Quixa.Api.Infrastructure.Registrations
 
             services.AddSwaggerGen(swaggerOptions =>
             {
+
                 swaggerOptions.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "Quixa Web Api",
